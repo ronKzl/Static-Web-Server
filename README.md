@@ -31,21 +31,22 @@ This project features a basic Go server that:
 
 | **Method** | **Route** | **Description**                     |
 |------------|-----------|-------------------------------------|
-| GET        | `/form`   | Serves the HTML form to the user    |
+| GET        | `/form.html`   | Serves the HTML form to the user    |
 | POST       | `/form`   | Processes form submissions (name + address) |
-
+| GET       | `/`   | Serves the HTML index to the user |
+| GET       | `/hello`   | Serves a string response to the user |
 ---
 
 ## Architecture Diagram
 
 Below is a simple placeholder image reference for your project’s flow.
 
-![Project Diagram](./Flow-overview.jpg)
+![Project Diagram](./Flow-overview.JPG)
 
 **Explanation of Flow**:
 1. **GET** `/form.html` -> form.html is served to user.
-    a. **User fills out** `name` and `address` fields, clicks **Submit**.
-    b. **POST** `/form` -> Server reads the form values and responds with a success message, displaying the submitted data.
+    - **User fills out** `name` and `address` fields, clicks **Submit**.
+    - **POST** `/form` -> Server reads the form values and responds with a success message, displaying the submitted data.
 
 2. **GET** `/` -> index.html is served to user.
 3. **GET** `/hello` -> string is returned to user.
