@@ -1,12 +1,4 @@
-# Go Form Submission Project
-
-A simple Go web application demonstrating how to:
-
-- Serve an HTML form (name/address fields)
-- Parse form data on the server side
-- Display the submitted information back to the user
-
----
+# Go Static Web Server
 
 ## Table of Contents
 
